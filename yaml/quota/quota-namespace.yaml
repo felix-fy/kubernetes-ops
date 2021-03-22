@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: quota-prod-cm-szindex
+  namespace: prod-cm-szindex
+spec:
+  hard:
+    requests.cpu: "10"
+    requests.memory: 10Gi
+    limits.cpu: "10"
+    limits.memory: 10Gi
+    requests.nvidia.com/gpu: 1
+    pods: "100"
+    services: "20"
