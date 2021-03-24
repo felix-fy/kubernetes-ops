@@ -5,7 +5,7 @@ metadata:
   namespace: kube-system
 spec:
   rules:
-  - host: kuboard.sutpc.com         
+  - host: kuboard.abc.com         
     http:
       paths:
       - path:
